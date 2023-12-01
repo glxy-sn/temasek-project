@@ -1,0 +1,60 @@
+.sidebar{
+    width: 0px;
+    height: calc(100vh - 50px);
+    //transition: 200ms;
+    display:none;
+    
+}
+.sidebar-active{
+    width: 250px;
+    height: calc(100vh - 50px);
+    //transition: 500ms;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 100; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-y: auto;
+
+    .sidebar-menu{
+        .sidebar-menu-header{
+            height: 45px;
+        }
+        .sidebar-menu-item{
+            ul li {
+                list-style: none;
+                align-items:'center';
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            ul li a{
+                text-decoration: none;
+            }
+            .accordion{
+                .accordion-item{
+                    .accordion-header{
+                        .accordion-button{
+                            padding-left:20px;
+                            padding-top: 8px;
+                            padding-right: 20px;
+                            padding-bottom: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.sidebar-menu {
+    width: 250px;
+}
+
+
+.outlet {
+    max-height: calc(100vh - 50px);
+    //height:(100vh);
+    overflow: auto;
+    position: relative;
+}
